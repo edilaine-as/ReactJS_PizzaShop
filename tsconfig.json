@@ -21,6 +21,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
+    "types": ["vitest/globals"],
+
     "baseUrl": ".",
     "paths": {
       "@/*": [ //as importações que começam com @/, vão ser direcionadas pro src
@@ -28,6 +30,6 @@
       ]
     }
   },
-  "include": ["src"],
+  "include": ["src", "test"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
